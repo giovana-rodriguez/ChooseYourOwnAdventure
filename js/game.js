@@ -6,33 +6,33 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+         message: "It's September 1, 1950. You decided to ride your bike. Which way do you?",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Right, Acorn St.",
+                    nextLevel: "Field",
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Left, Sunshine St.",
+                    nextLevel: "Street",
                 },
             ]
         },
 
-        cave: {
+        Field: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "You start riding and end up in an large open field. You stop and notice an old house. You decide to...",
             choices: [
                 {
-                    text: "Start over",
+                    text: "Go towards it and check it out",
                     nextLevel: "start",
                 },
             ]
         },
 
-        field: {
+        Street: {
             message: "Some adventurer you are...",
             choices: [
                 {
